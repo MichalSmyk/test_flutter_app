@@ -28,4 +28,18 @@ class WeatherModel extends WeatherEntity {
     pressure: json['main']['pressure'],
     humidity: json['main']['humidity'],
   );
+
+  Map < String, dynamic > toJson() => {
+    'weather': [{
+      'main': main,
+      'description': description,
+      'icon': iconCode,
+    }, ],
+    'main': {
+      'temp': temperature,
+      'pressure': pressure,
+      'humidity': humidity,
+    },
+    'name': cityName,
+  };
 }

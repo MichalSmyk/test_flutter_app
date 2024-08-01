@@ -39,4 +39,26 @@ const testWeatherModel = WeatherModel(
       expect(result, equals(testWeatherModel));
     }
   );
+
+  test('should return a json map containing proper data',
+  () async{
+    final result = testWeatherModel.toJson();
+
+    final expectedJsonMap = {
+      'weather': [{
+        'main': 'Clear',
+        'description': 'clear sky',
+        'icon': '01d',
+      }],
+      'main': {
+        'temp': 301.76,
+        'pressure': 1011,
+        'humidity': 35,
+      },
+      'name': 'Zocca',
+    };
+
+    expect(result, equals(expectedJsonMap));
+  },
+  );
 }
