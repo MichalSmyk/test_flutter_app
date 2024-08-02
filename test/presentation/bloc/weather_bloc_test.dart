@@ -3,9 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test_app/core/error/failure.dart';
 import 'package:test_app/domain/entities/weather.dart';
-import 'package:test_app/presentation/block/weather_bloc.dart';
-import 'package:test_app/presentation/block/weather_event.dart';
-import 'package:test_app/presentation/block/weather_state.dart';
+import 'package:test_app/presentation/bloc/weather_bloc.dart';
+import 'package:test_app/presentation/bloc/weather_event.dart';
+import 'package:test_app/presentation/bloc/weather_state.dart';
 import 'package:bloc_test/bloc_test.dart';
 
 import '../../helpers/test_helper.mocks.dart';

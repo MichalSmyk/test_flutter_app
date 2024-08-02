@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test_app/presentation/block/pages/weather_page.dart';
-import 'package:test_app/presentation/block/weather_bloc.dart';
+import 'package:test_app/presentation/pages/injection_container.dart';
+import 'package:test_app/presentation/pages/weather_page.dart';
+import 'package:test_app/presentation/bloc/weather_bloc.dart';
 
 
-import 'presentation/bloc/weather_bloc.dart';
+// import 'presentation/bloc/weather_bloc.dart';
 
 void main() {
   setupLocator();

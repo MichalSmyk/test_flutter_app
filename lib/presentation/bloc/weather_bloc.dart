@@ -1,7 +1,7 @@
 import 'package:rxdart/rxdart.dart';
 import 'package:test_app/domain/usecases/get_current_weather.dart';
-import 'package:test_app/presentation/block/weather_event.dart';
-import 'package:test_app/presentation/block/weather_state.dart';
+import 'package:test_app/presentation/bloc/weather_event.dart';
+import 'package:test_app/presentation/bloc/weather_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class WeatherBloc extends Bloc<WeatherEvent,WeatherState> {
